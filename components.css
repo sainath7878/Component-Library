@@ -1,0 +1,122 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Work+Sans:wght@300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Work+Sans:wght@300&display=swap');
+
+@import "./Components/Alert/alert.css";
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+:root{
+    --BACKGROUND-COLOR:#FFF;
+    --PRIMARY-COLOR: #010101;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ------utility-classes------ */
+.fs-4{
+    font-size: 4rem;
+}
+
+.fs-2{
+    font-size: 2rem;
+}
+
+.fs-l{
+    font-size: 3rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+
+/* -------header start-------- */
+.header{
+    background-color: var(--PRIMARY-COLOR);
+    padding: 2rem;
+}
+
+.header-nav-link,
+.brand-link{
+    text-decoration: none;
+    color: var(--BACKGROUND-COLOR);
+    margin-right: 2rem;
+}
+
+.brand-link{
+    font-size: 4rem;
+}
+
+.header-nav-link{
+    font-size: 3rem;
+}
+/* ------------header end-------- */
+
+/* -------main start---------------- */
+main{
+    display: grid;
+    grid-template-areas: 
+    "side-nav documentation documentation documentation documentation documentation"
+    ;
+    gap: 2rem;
+}
+
+/* ---------side-nav start---------- */
+.side-nav{
+    grid-area: side-nav;
+    padding: 1.5rem;
+    height:100%;
+    border-right: 2px solid var(--PRIMARY-COLOR);
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-link{
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.nav-link > a{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--PRIMARY-COLOR);
+}
+/* ----side-nav end--------- */
+
+/* ------documentation start----- */
+.documentation{
+    grid-area: documentation;
+    padding: 2rem;
+}
+
+.section > p{
+    font-weight: lighter;
+}
+
+.highlight{
+    padding: 2px;
+    border-radius: 1rem;
+    background: var(--PRIMARY-COLOR);
+    color: var(--BACKGROUND-COLOR);
+}
+
+.hljs{
+    background: var(--PRIMARY-COLOR);
+}
+
+/* ------main end --------  */
