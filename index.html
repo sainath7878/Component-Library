@@ -11,42 +11,41 @@
 <body>
 
     <!-- -----Header Start--------- -->
-    <header class="header">
+    <header class="header fix-top">
         <a href="index.html" class="brand-link">JODD UI</a>
         <a href="index.html" class="header-nav-link">Home</a>
         <a href="#" class="header-nav-link">Docs</a>
     </header>
-    <!-- ----------Header End--------------- -->
 
     <!-- --------Main Start--------- -->
     <main class="main">
         <!-- ---------Side Navbar start------------ -->
-        <aside>
+        <aside class="">
             <nav class="side-nav">
                 <ul class="nav-pills">
                     <li class="nav-link">
-                        <a href="#">Getting Started</a>
+                        <a href="#introduction" class="fs-m">Getting Started</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Alert</a>
+                        <a href="#alert" class="fs-m">Alert</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Avatar</a>
+                        <a href="#" class="fs-m">Avatar</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Badge</a>
+                        <a href="#" class="fs-m">Badge</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Button</a>
+                        <a href="#" class="fs-m">Button</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Cards</a>
+                        <a href="#" class="fs-m">Cards</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Image</a>
+                        <a href="#" class="fs-m">Image</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Input</a>
+                        <a href="#" class="fs-m">Input</a>
                     </li>
                 </ul>
             </nav>
@@ -54,21 +53,49 @@
         
         <!-- ---------Side Navbar end------------ -->
 
-        <div class="documentation">
+        <div class="documentation">  
+
             <section id="introduction" class="section">
-                <h1 class="fs-4 mb-2">Introduction</h1>
-                <p class="fs-2 mb-2"> JODD UI is a free, fast, lightweight framework for building websites. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, voluptatum?</p>
-                <h2 class="fs-l mb-2">How to Use?</h2>
-                <p class="fs-2 mb-2">Copy Paste the link to your href in <span class="highlight">&lt;link&gt;</span> before all other stylesheets.</p>
-                <pre><code class="html fs-2">
-                    &lt;link rel="stylesheet" href="https://rabiui.netlify.app/css/rabiui.components.css"&gt;
-                </code></pre>
+                <h1 class="fs-xl">Introduction</h1>
+                <p class="fs-m "> JODD UI is a free, fast, lightweight framework for building websites. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, voluptatum?</p>
+                <h2 class="fs-l ">How to Use?</h2>
+                <p class="fs-m ">Copy Paste the link to your href in <span class="highlight">&lt;link&gt;</span> before all other stylesheets.</p>
+                
+                <!-- <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=54px&ph=29px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=4x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fjodd-component-library.netlify.app%252Fcomponents.css%2522%2520%252F%253E"
+                    style="width: 950px; height: 250px; border:0;overflow:scroll;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe> -->
             </section>
-        </div>
+        
+            <section class="section mb-2" id="alert">
+                <h2 class="fs-l">Alert</h2>
+                <p class="fs-m">There are four variants of the alert component <span class="highlight">alert-danger</span>, <span class="highlight">alert-success</span>, <span class="highlight">alert-warning</span>, <span class="highlight">alert-info</span>.</p>
+        
+                <div class="alert alert-success">
+                    <p class="fs-s">A success alert</p>
+                </div>
+                <div class="alert alert-danger">
+                    <p class="fs-s">A danger alert</p>
+                </div>
+                <div class="alert alert-warning">
+                    <p class="fs-s">A warning alert</p>
+                </div>
+                <div class="alert alert-info">
+                    <p class="fs-s">A info alert</p>
+                </div>
+                
+                <!-- <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=54px&ph=29px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=4x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2509%253Cp%2520class%253D%2522fs-s%2522%253EA%2520success%2520alert%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2509%253Cp%2520class%253D%2522fs-s%2522%253EA%2520danger%2520alert%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2509%253Cp%2520class%253D%2522fs-s%2522%253EA%2520warning%2520alert%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2509%253Cp%2520class%253D%2522fs-s%2522%253EA%2520info%2520alert%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                    style="width: 950px; height: 405px; border:0; overflow:scroll;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe> -->
+        
+            </section>
+        
+        </div> 
+        
     </main>
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js" integrity="sha512-s+tOYYcC3Jybgr9mVsdAxsRYlGNq4mlAurOrfNuGMQ/SCofNPu92tjE7YRZCsdEtWL1yGkqk15fU/ark206YTg==" crossorigin="anonymous"></script>
-<script>hljs.highlightAll();</script>
 </body>
 </html>

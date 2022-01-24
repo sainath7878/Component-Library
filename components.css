@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Work+Sans:wght@300&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Work+Sans:wght@300&display=swap');
 
 @import "./Components/Alert/alert.css";
@@ -10,12 +8,23 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    word-wrap: break-word;
 
 }
 
 :root{
     --BACKGROUND-COLOR:#FFF;
     --PRIMARY-COLOR: #010101;
+    --HIGHLIGHT-COLOR: #374151;
+    --SUCCESS-BACKGROUND_COLOR: #bbf7d0;
+    --SUCCESS-COLOR: #16a34a;
+    --DANGER-BACKGROUND_COLOR: #fecaca;
+    --DANGER-COLOR: #dc2626;
+    --WARNING-BACKGROUND_COLOR: #fde68a;
+    --WARNING-COLOR: #f59e0b;
+    --INFO-BACKGROUND_COLOR: #a5f3fc;
+    --INFO-COLOR: #0891b2;
 }
 
 html{
@@ -27,11 +36,11 @@ a{
 }
 
 /* ------utility-classes------ */
-.fs-4{
+.fs-xl{
     font-size: 4rem;
 }
 
-.fs-2{
+.fs-m{
     font-size: 2rem;
 }
 
@@ -39,8 +48,17 @@ a{
     font-size: 3rem;
 }
 
+.fs-s{
+    font-size: 1.5rem;
+}
+
 .mb-2{
     margin-bottom: 2rem;
+}
+
+.fix-top{
+    position: fixed;
+    top:0;
 }
 
 
@@ -48,6 +66,7 @@ a{
 .header{
     background-color: var(--PRIMARY-COLOR);
     padding: 2rem;
+    width: 100vw;;
 }
 
 .header-nav-link,
@@ -64,26 +83,25 @@ a{
 .header-nav-link{
     font-size: 3rem;
 }
-/* ------------header end-------- */
 
 /* -------main start---------------- */
 main{
-    display: grid;
-    grid-template-areas: 
-    "side-nav documentation documentation documentation documentation documentation"
-    ;
-    gap: 2rem;
+    margin-top: 8rem;
+    display: flex;
 }
 
 /* ---------side-nav start---------- */
-.side-nav{
-    grid-area: side-nav;
-    padding: 1.5rem;
-    height:100%;
-    border-right: 2px solid var(--PRIMARY-COLOR);
-    display: flex;
-    justify-content: center;
+.nav-link > a{
+    color: var(--PRIMARY-COLOR);
+}
 
+.side-nav{
+    padding: 5rem 5rem;
+    border-right: 5px solid var(--PRIMARY-COLOR);
+    max-width: 25rem;
+    position: sticky;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .nav-link{
@@ -91,32 +109,38 @@ main{
     margin-bottom: 3rem;
 }
 
-.nav-link > a{
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--PRIMARY-COLOR);
-}
-/* ----side-nav end--------- */
-
 /* ------documentation start----- */
 .documentation{
-    grid-area: documentation;
     padding: 2rem;
+}
+
+.section{
+    border:1px solid var(--PRIMARY-COLOR);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 1.5rem;
 }
 
 .section > p{
     font-weight: lighter;
 }
 
-.highlight{
-    padding: 2px;
-    border-radius: 1rem;
-    background: var(--PRIMARY-COLOR);
-    color: var(--BACKGROUND-COLOR);
+.section > *{
+    margin-bottom: 3rem;
 }
 
-.hljs{
-    background: var(--PRIMARY-COLOR);
+section > iframe{
+    margin: 0 auto;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+@media only screen and(max-width: 600px){
+     main{
+        background-color: red;
+    }
 }
 
 /* ------main end --------  */
