@@ -114,13 +114,13 @@
             </section>
 
             <!-- ------ Avatar--------------- -->
-            <section class="section mb-4">
+            <section class="section mb-4" id="avatar">
                 <h1 class="fs-m">Avatar</h1>
                 <p class="fs-s">Avatar Component is available in 4 sizes</p>
-                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-sm avatar-rounded"/>
-                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-m avatar-rounded"/>
-                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-l avatar-rounded"/>
-                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-xl avatar-rounded"/>
+                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-sm avatar-rounded mr-2"/>
+                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-m avatar-rounded mr-2"/>
+                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-l avatar-rounded mr-2"/>
+                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-xl avatar-rounded mr-2"/>
                 <pre class="code-container">
                     <code class="html">
                         &lt;img src=&quot;...&quot; alt=&quot;&quot; class=&quot;avatar-sm avatar-rounded&quot;/&gt;
@@ -133,7 +133,77 @@
 
             <!-- ------- Badges ----------- -->
             <section class="section mb-4">
-                <h1 class="fs-m">Badge</h1>
+                <h1 class="fs-m">Badge on Avatars</h1>
+                <p class="fs-s">Badge on Avatars consists of <span class="highlight">four</span> components</p>
+                <div class="badge mr-2">
+                    <img src="./Images/man-profile-svgrepo-com.svg"  alt="profile" class="avatar-sm avatar-rounded ">
+                    <span class="indicator indicator-sm"></span>
+                </div>
+
+                <div class="badge mr-2">
+                    <img src="./Images/man-profile-svgrepo-com.svg"  alt="profile" class="avatar-m avatar-rounded ">
+                    <span class="indicator indicator-m"></span>
+                </div>
+
+                <div class="badge mr-2">
+                    <img src="./Images/man-profile-svgrepo-com.svg"  alt="profile" class="avatar-l avatar-rounded ">
+                    <span class="indicator indicator-l"></span>
+                </div>
+
+                <div class="badge mr-2">
+                    <img src="./Images/man-profile-svgrepo-com.svg"  alt="profile" class="avatar-xl avatar-rounded ">
+                    <span class="indicator indicator-xl"></span>
+                </div>
+
+                <pre class="code-container">
+                    <code class="html">
+                        &lt;div class=&quot;badge&quot;&gt;
+                            &lt;img src=&quot;....&quot;  alt=&quot;....&quot; class=&quot;avatar-sm avatar-rounded &quot;&gt;
+                            &lt;span class=&quot;indicator indicator-sm&quot;&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;badge&quot;&gt;
+                            &lt;img src=&quot;....&quot;  alt=&quot;....&quot; class=&quot;avatar-m avatar-rounded &quot;&gt;
+                            &lt;span class=&quot;indicator indicator-m&quot;&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;badge&quot;&gt;
+                            &lt;img src=&quot;....&quot;  alt=&quot;....&quot; class=&quot;avatar-l avatar-rounded &quot;&gt;
+                            &lt;span class=&quot;indicator indicator-l&quot;&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;badge&quot;&gt;
+                            &lt;img src=&quot;....&quot;  alt=&quot;....&quot; class=&quot;avatar-xl avatar-rounded &quot;&gt;
+                            &lt;span class=&quot;indicator indicator-xl&quot;&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h1 class="fs-m">Badge on Icons</h1>
+                <p class="fs-s">Badge on icons consists of two components</p>
+                <div class="badge mr-2">
+                    <img src="./Images/IcRoundShoppingCart.svg" alt="Cart" class="badge-icon">
+                    <span class="text-badge d-flex-center">10+</span>
+                </div>
+
+                <div class="badge mr-2">
+                    <img src="./Images/MdiBell.svg" alt="Bell" class="badge-icon">
+                    <span class="text-badge d-flex-center">5</span>
+                </div>
+
+                <pre class="code-container">
+                    <code class="html">
+                        &lt;div class=&quot;badge&quot;&gt;
+                            &lt;img src=&quot;....&quot; alt=&quot;....&quot; class=&quot;badge-icon&quot;&gt;
+                            &lt;span class=&quot;text-badge d-flex-center&quot;&gt;10+&lt;/span&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;badge&quot;&gt;
+                            &lt;img src=&quot;....&quot; alt=&quot;....&quot; class=&quot;badge-icon&quot;&gt;
+                            &lt;span class=&quot;text-badge d-flex-center&quot;&gt;5&lt;/span&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
             </section>
         
         </div> 
