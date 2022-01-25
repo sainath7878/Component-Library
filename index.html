@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+    /> -->
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
     <link rel="stylesheet" href="components.css">
     <title>JODD UI</title>
 </head>
@@ -55,22 +60,24 @@
 
         <div class="documentation">  
 
-            <section id="introduction" class="section">
-                <h1 class="fs-xl">Introduction</h1>
-                <p class="fs-m "> JODD UI is a free, fast, lightweight framework for building websites. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, voluptatum?</p>
-                <h2 class="fs-l ">How to Use?</h2>
-                <p class="fs-m ">Copy Paste the link to your href in <span class="highlight">&lt;link&gt;</span> before all other stylesheets.</p>
+            <!-- ------Getting Started--------- -->
+            <section id="introduction" class="section mb-4">
+                <h1 class="fs-l">Introduction</h1>
+                <p class="fs-s "> JODD UI is a free, fast, lightweight framework for building websites. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, voluptatum?</p>
+                <h2 class="fs-m ">How to Use?</h2>
+                <p class="fs-s ">Copy Paste the link to your href in <span class="highlight">&lt;link&gt;</span> before all other stylesheets.</p>
                 
-                <!-- <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=54px&ph=29px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=4x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fjodd-component-library.netlify.app%252Fcomponents.css%2522%2520%252F%253E"
-                    style="width: 950px; height: 250px; border:0;overflow:scroll;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe> -->
+                <pre class="code-container">
+                    <code class="html">
+                        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://jodd-component-library.netlify.app/components.css&quot;&gt;
+                    </code>
+                </pre>
             </section>
         
-            <section class="section mb-2" id="alert">
-                <h2 class="fs-l">Alert</h2>
-                <p class="fs-m">There are four variants of the alert component <span class="highlight">alert-danger</span>, <span class="highlight">alert-success</span>, <span class="highlight">alert-warning</span>, <span class="highlight">alert-info</span>.</p>
+            <!-- -------- Alert----------- -->
+            <section class="section mb-4" id="alert">
+                <h2 class="fs-m">Alert</h2>
+                <p class="fs-s">There are four variants of the alert component <span class="highlight">alert-danger</span>, <span class="highlight">alert-success</span>, <span class="highlight">alert-warning</span>, <span class="highlight">alert-info</span>.</p>
         
                 <div class="alert alert-success">
                     <p class="fs-s">A success alert</p>
@@ -84,18 +91,56 @@
                 <div class="alert alert-info">
                     <p class="fs-s">A info alert</p>
                 </div>
-                
-                <!-- <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=54px&ph=29px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=4x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2509%253Cp%2520class%253D%2522fs-s%2522%253EA%2520success%2520alert%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2509%253Cp%2520class%253D%2522fs-s%2522%253EA%2520danger%2520alert%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2509%253Cp%2520class%253D%2522fs-s%2522%253EA%2520warning%2520alert%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2509%253Cp%2520class%253D%2522fs-s%2522%253EA%2520info%2520alert%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-                    style="width: 950px; height: 405px; border:0; overflow:scroll;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe> -->
-        
+
+                <pre class="code-container">
+                    <code class="html">
+                        &lt;div class=&quot;alert alert-success&quot;&gt;
+                            &lt;p class=&quot;fs-s&quot;&gt;A success alert&lt;/p&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;alert alert-danger&quot;&gt;
+                            &lt;p class=&quot;fs-s&quot;&gt;A danger alert&lt;/p&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;alert alert-warning&quot;&gt;
+                            &lt;p class=&quot;fs-s&quot;&gt;A warning alert&lt;/p&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;alert alert-info&quot;&gt;
+                            &lt;p class=&quot;fs-s&quot;&gt;A info alert&lt;/p&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <!-- ------ Avatar--------------- -->
+            <section class="section mb-4">
+                <h1 class="fs-m">Avatar</h1>
+                <p class="fs-s">Avatar Component is available in 4 sizes</p>
+                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-sm avatar-rounded"/>
+                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-m avatar-rounded"/>
+                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-l avatar-rounded"/>
+                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-xl avatar-rounded"/>
+                <pre class="code-container">
+                    <code class="html">
+                        &lt;img src=&quot;...&quot; alt=&quot;&quot; class=&quot;avatar-sm avatar-rounded&quot;/&gt;
+                        &lt;img src=&quot;...&quot; alt=&quot;&quot; class=&quot;avatar-m avatar-rounded&quot;/&gt;
+                        &lt;img src=&quot;...&quot; alt=&quot;&quot; class=&quot;avatar-l avatar-rounded&quot;/&gt;
+                        &lt;img src=&quot;...&quot; alt=&quot;&quot; class=&quot;avatar-xl avatar-rounded&quot;/&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <!-- ------- Badges ----------- -->
+            <section class="section mb-4">
+                <h1 class="fs-m">Badge</h1>
             </section>
         
         </div> 
         
     </main>
-
+    
+    <script src="./Components/javascript/highlight.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Work+Sans:wght@300&display=swap');
 
 @import "./Components/Alert/alert.css";
-
-
+@import "./Components/Avatar/avatar.css";
+@import "./Components/Badge/badge.css";
+/* style="width: 950px; height: 250px; border:0;overflow:scroll;" */
+                    
 
 *{
     padding: 0;
@@ -10,6 +12,7 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     word-wrap: break-word;
+    letter-spacing: 1px;;
 
 }
 
@@ -35,6 +38,12 @@ a{
     text-decoration: none;
 }
 
+.code-container{
+    align-items: center;
+    margin-bottom: 1rem ;
+}
+
+
 /* ------utility-classes------ */
 .fs-xl{
     font-size: 4rem;
@@ -54,6 +63,10 @@ a{
 
 .mb-2{
     margin-bottom: 2rem;
+}
+
+.mb-4{
+    margin-bottom: 4rem;
 }
 
 .fix-top{
@@ -87,7 +100,10 @@ a{
 /* -------main start---------------- */
 main{
     margin-top: 8rem;
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "side-nav documentation documentation"
+    ;
 }
 
 /* ---------side-nav start---------- */
@@ -96,12 +112,12 @@ main{
 }
 
 .side-nav{
+    grid-area: side-nav;
     padding: 5rem 5rem;
-    border-right: 5px solid var(--PRIMARY-COLOR);
-    max-width: 25rem;
+    border-right: 2px solid var(--PRIMARY-COLOR);
     position: sticky;
+    top: 7rem;
     overflow-y: scroll;
-    height: 100vh;
 }
 
 .nav-link{
@@ -111,13 +127,13 @@ main{
 
 /* ------documentation start----- */
 .documentation{
-    padding: 2rem;
+    grid-area: documentation;
+    padding: 4rem;
 }
 
 .section{
     border:1px solid var(--PRIMARY-COLOR);
     padding: 2rem;
-    margin-bottom: 3rem;
     border-radius: 1.5rem;
 }
 
@@ -125,7 +141,7 @@ main{
     font-weight: lighter;
 }
 
-.section > *{
+section > *{
     margin-bottom: 3rem;
 }
 
@@ -137,9 +153,63 @@ section > iframe{
     font-weight: bold;
 }
 
-@media only screen and(max-width: 600px){
-     main{
-        background-color: red;
+@media only screen and (max-width: 800px){
+    html{
+        font-size: 62.5%;
+    }
+     .side-nav{
+         display: none;
+     }
+
+     .code-container{
+        width: auto;
+        text-align: left;
+    }
+
+    .section{
+        width: 80%;
+        padding: 1rem;
+        margin: 3rem 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    html{
+        font-size: 50%;
+    }
+
+    main{
+        grid-template-areas: 
+        "documentation"
+        ;
+    }
+
+    .side-nav{
+        display: none;
+    }
+
+    .code-container{
+        width: auto;
+        text-align: left;
+    }
+    
+    .documentation{
+        padding: 1rem;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .section{
+        width: 100%;
+        padding: 2rem;
+        margin: 3rem 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
