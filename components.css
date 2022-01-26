@@ -192,9 +192,7 @@ section > iframe{
     .section{
         width: 80%;
         padding: 1rem;
-        /* margin: 3rem 0 ;
-        margin-left: auto;
-        margin-right: auto; */
+        margin: 3rem auto ;
     }
 
 }
