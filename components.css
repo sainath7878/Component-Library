@@ -205,6 +205,10 @@ section > iframe{
         margin: 3rem auto ;
     }
 
+    .card{
+        width: 80%;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -235,6 +239,11 @@ section > iframe{
         padding: 2rem;
         margin: 4rem 2rem;
         /* margin-left: 4rem; */
+    }
+
+    .card{
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
