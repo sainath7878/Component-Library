@@ -15,10 +15,10 @@
 }
 
 .card-text-highlight{
-    color: #a40ae0;
+    color: var(--SECONDARY-COLOR);
 }
 
-.card > h1, h2, p, button{
+.card > h1, .card > h2, .card > p, .card > button{
     padding-left: 1rem;
 }
 
@@ -36,4 +36,20 @@
     font-size: 1.5rem;
     top: 0;
     left: 0;
+}
+
+.card-btn-dismiss{
+    background: transparent;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    color: var(--BACKGROUND-COLOR);
+    border: none;
+    cursor: pointer;
+}
+
+.card-btn-dismiss:hover{
+    color: var(--SECONDARY-COLOR)
 }

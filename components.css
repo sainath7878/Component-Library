@@ -19,6 +19,7 @@
 :root{
     --BACKGROUND-COLOR:#FFF;
     --PRIMARY-COLOR: #010101;
+    --SECONDARY-COLOR: #a40ae0;
     --HIGHLIGHT-COLOR: #374151;
     --SUCCESS-BACKGROUND_COLOR: #bbf7d0;
     --SUCCESS-COLOR: #015821;
@@ -140,7 +141,7 @@ main{
 .side-nav{
     grid-area: side-nav;
     padding: 5rem 5rem;
-    border-right: 2px solid var(--PRIMARY-COLOR);
+    /* border-right: 2px solid var(--PRIMARY-COLOR); */
     position: sticky;
     top: 7rem;
     overflow-y: scroll;
@@ -206,7 +207,7 @@ section > iframe{
     }
 
     .card{
-        width: 80%;
+        width: 60%;
     }
 
 }
@@ -242,8 +243,7 @@ section > iframe{
     }
 
     .card{
-        width: 80%;
-        margin: 0 auto;
+        width: 60%;
     }
 }
 
