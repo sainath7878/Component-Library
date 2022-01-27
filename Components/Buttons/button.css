@@ -5,6 +5,7 @@
     border:none;
     min-width: 15rem;
     cursor: pointer;
+    background: var(--SECONDARY-COLOR);
 }
 
 .btn-primary{

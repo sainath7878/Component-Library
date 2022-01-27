@@ -53,3 +53,22 @@
 .card-btn-dismiss:hover{
     color: var(--SECONDARY-COLOR)
 }
+
+/* --------text only card ------------  */
+
+.text-only-card{
+    width: 30vw;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    border: 2px solid var(--PRIMARY-COLOR);
+    padding: 2rem;
+}
+
+.text-only-dismiss{
+    color: var(--PRIMARY-COLOR);
+    top: 1.5rem;
+    right: 1rem;
+}

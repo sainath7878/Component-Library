@@ -118,6 +118,8 @@ a{
 
 .brand-link{
     font-size: 4rem;
+    color: var(--SECONDARY-COLOR);
+
 }
 
 .header-nav-link{
