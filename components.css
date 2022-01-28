@@ -5,6 +5,7 @@
 @import "./Components/Badge/badge.css";
 @import "/Components/Buttons/button.css";
 @import "./Components/Card/card.css";
+@import "./Components/image/image.css";
                     
 
 *{
@@ -13,7 +14,7 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     word-wrap: break-word;
-    letter-spacing: 1px;;
+    letter-spacing: 1px;
 }
 
 :root{
@@ -35,15 +36,15 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 a{
     text-decoration: none;
 }
 
-.code-container{
-    align-items: center;
-    margin-bottom: 1rem ;
+.html {
+    text-align: left;
 }
 
 /* ------utility-classes------ */
@@ -90,10 +91,14 @@ a{
     align-items: center;
 }
 
-.d-flex-center{
+.d-flex-inline-center{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.d-inline-block{
+    display: inline-block;
 }
 
 .d-flex-wrap{
@@ -143,7 +148,7 @@ main{
 .side-nav{
     grid-area: side-nav;
     padding: 5rem 5rem;
-    /* border-right: 2px solid var(--PRIMARY-COLOR); */
+    border-right: 2px solid var(--PRIMARY-COLOR);
     position: sticky;
     top: 7rem;
     overflow-y: scroll;
@@ -155,6 +160,10 @@ main{
     margin-bottom: 3rem;
 }
 
+.nav-link > a:hover{
+    color: var(--SECONDARY-COLOR);
+}
+
 /* ------documentation start----- */
 .documentation{
     grid-area: documentation;
@@ -162,9 +171,7 @@ main{
 }
 
 .section{
-    border:1px solid var(--PRIMARY-COLOR);
     padding: 2rem;
-    border-radius: 1.5rem;
 }
 
 .section > p{
@@ -209,7 +216,7 @@ section > iframe{
     }
 
     .card{
-        width: 60%;
+        width: 40%;
     }
 
 }
