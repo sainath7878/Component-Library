@@ -1,0 +1,4 @@
+.form{
+    border: thin solid var(--PRIMARY-COLOR);
+    border-radius: 1rem;
+}

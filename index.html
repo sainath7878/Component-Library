@@ -21,7 +21,7 @@
     <!-- --------Main Start--------- -->
     <main class="main">
         <!-- ---------Side Navbar start------------ -->
-        <aside class="">
+        <aside>
             <nav class="side-nav">
                 <ul class="nav-pills">
                     <li class="nav-link">
@@ -57,7 +57,7 @@
         <div class="documentation">  
 
             <!-- ------Getting Started--------- -->
-            <section id="introduction" class="section mb-2">
+            <section id="introduction" class="section">
                 <h1 class="fs-l">Introduction</h1>
                 <p class="fs-s "> JODD UI is a free, fast, lightweight framework for building websites.</p>
                 <h2 class="fs-ml">How to Use?</h2>
@@ -71,7 +71,7 @@
             </section>
         
             <!-- -------- Alert----------- -->
-            <section class="section mb-2" id="alert">
+            <section class="section" id="alert">
                 <h2 class="fs-ml">Alert</h2>
                 <p class="fs-s">There are four variants of the alert component <span class="highlight">alert-danger</span>, <span class="highlight">alert-success</span>, <span class="highlight">alert-warning</span>, <span class="highlight">alert-info</span>.</p>
         
@@ -110,7 +110,7 @@
             </section>
 
             <!-- ------ Avatar--------------- -->
-            <section class="section mb-2" id="avatar">
+            <section class="section" id="avatar">
                 <h1 class="fs-ml">Avatar</h1>
                 <p class="fs-s">Avatar Component is available in <span class="highlight">4</span> sizes.</p>
                 <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-sm avatar-rounded mr-2"/>
@@ -128,7 +128,7 @@
             </section>
 
             <!-- ------- Badges ----------- -->
-            <section class="section mb-2">
+            <section class="section">
                 <h1 class="fs-ml">Badge</h1>
                 <h2 class="fs-m">Badge on Avatars</h2>
                 <p class="fs-s">Badge on Avatars consists of <span class="highlight">four</span> components</p>
@@ -204,7 +204,7 @@
             </section>
 
             <!-- -------Buttons------------- -->
-            <section class=" section mb-2">
+            <section class=" section">
                 <h1 class="fs-ml">Buttons</h1>
                 <p class="fs-s">Button consists of <span class="highlight">four </span>Components
                     <span class="highlight">Primary, </span>
@@ -252,7 +252,7 @@
                     </pre>
             </section>
 
-            <section class="section mb-2">
+            <section class="section">
                 <h1 class="fs-ml">Cards</h1>
                 <p class="fs-s">Card consists of 5 components</p>
 
@@ -348,8 +348,7 @@
     &lt;span class=&quot;card-badge&quot;&gt;
         On Sale
     &lt;/span&gt;
-&lt;/div&gt;
-                    </code>
+&lt;/div&gt;</code>
                 </pre>
 
                 <!-- ------- Text Only Card ------  -->
@@ -409,7 +408,8 @@
                 </div>
             </section>
 
-            <section class="section mb-2">
+            <!-- --------Images----------  -->
+            <section class="section">
                 <h1 class="fs-ml">
                     Images
                 </h1>
@@ -423,8 +423,15 @@
                 <img src="./Images/image.jpg" alt="random" class="img-round">
             </section>
 
+            <!-- -------- Input --------  -->
             <section class="section mb-2">
                 <h1 class="fs-m">Input</h1>
+                <form class="form d-flex-center">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" class="form-input">
+
+                </form>
+                
             </section>
         
         </div> 

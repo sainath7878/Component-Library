@@ -6,6 +6,7 @@
 @import "/Components/Buttons/button.css";
 @import "./Components/Card/card.css";
 @import "./Components/image/image.css";
+@import "./Components/input/input.css";
                     
 
 *{
@@ -128,23 +129,25 @@ img{
 .brand-link{
     text-decoration: none;
     color: var(--BACKGROUND-COLOR);
-    margin-right: 2rem;
+    margin-right: 10rem;
 }
 
 .brand-link{
     font-size: 4rem;
     color: var(--SECONDARY-COLOR);
-
+    margin-left: 2rem;
 }
 
 .header-nav-link{
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-right: 2rem;
 }
 
 /* -------main start---------------- */
 main{
     margin-top: 8rem;
     display: grid;
+    grid-template-columns: 20% 1fr;
     grid-template-areas: 
     "side-nav documentation documentation"
     ;
@@ -177,7 +180,7 @@ main{
 /* ------documentation start----- */
 .documentation{
     grid-area: documentation;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .section{
@@ -203,15 +206,21 @@ section > iframe{
 @media only screen and (max-width: 900px){
     html{
         font-size: 62.5%;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
 
-    .main{
-        width: 60%;
+    main { 
+        grid-template-columns: 1fr;
+        grid-template-areas: "documentation";
     }
 
     .side-nav{
         display: none;
+    }
+
+    .brand-link{
+        margin-left: 0;
+        margin-right: 2rem;
     }
 
      .code-container{
@@ -226,7 +235,6 @@ section > iframe{
     .section{
         width: 80%;
         padding: 1rem;
-        margin: 3rem auto ;
     }
 
     .card{
@@ -245,8 +253,13 @@ section > iframe{
         display: none;
     }
 
+    main { 
+    grid-template-columns: 1fr;
+    grid-template-areas: "documentation";
+    }
+
     .documentation{
-        padding: 0;
+        padding: 1rem;
     }
 
     .code-container{
@@ -261,8 +274,7 @@ section > iframe{
     .section{
         width: 90vw;
         padding: 2rem;
-        margin: 4rem 2rem;
-        /* margin-left: 4rem; */
+        /* margin: 4rem 2rem; */
     }
 
     .card{
