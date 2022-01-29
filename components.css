@@ -43,9 +43,19 @@ a{
     text-decoration: none;
 }
 
+img{
+    object-fit: cover;
+}
+
 .html {
     text-align: left;
 }
+
+.code-container{
+    width: 100%;
+}
+
+
 
 /* ------utility-classes------ */
 .fs-xl{
@@ -110,7 +120,7 @@ a{
 .header{
     background-color: var(--PRIMARY-COLOR);
     padding: 2rem;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
 }
 
@@ -196,12 +206,16 @@ section > iframe{
         /* overflow-x: hidden; */
     }
 
+    .main{
+        width: 60%;
+    }
+
     .side-nav{
         display: none;
     }
 
      .code-container{
-        width: auto;
+        width: 100%;
         text-align: left;
     }
 
@@ -216,7 +230,7 @@ section > iframe{
     }
 
     .card{
-        width: 40%;
+        max-width: 50%;
     }
 
 }
@@ -236,7 +250,7 @@ section > iframe{
     }
 
     .code-container{
-        width: auto;
+        width: 100%;
         text-align: left;
     }
 
@@ -252,7 +266,7 @@ section > iframe{
     }
 
     .card{
-        width: 60%;
+        max-width: 60%;
     }
 }
 
