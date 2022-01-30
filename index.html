@@ -425,12 +425,32 @@
 
             <!-- -------- Input --------  -->
             <section class="section mb-2">
-                <h1 class="fs-m">Input</h1>
-                <form class="form d-flex-center">
-                    <label for="username">Username</label>
+                <h1 class="fs-ml">Input</h1>
+                <h2 class="fs-m">Input with focus</h2>
+                <form class="form">
+                    <label class="fs-m" for="username">Username</label>
                     <input type="text" id="username" placeholder="Enter Username" class="form-input">
 
+                    <label class="fs-m" for="Password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" class="form-input">
+                    <button class="btn btn-primary">Login</button>
                 </form>
+
+                <h2 class="fs-m">Input with error style</h2>
+                <form class="form">
+                    <p class="fs-m error-style">Enter Correct username or password</p>
+                    <label class="fs-m" for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" class="form-input error-border">
+
+                    <label class="fs-m" for="Password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" class="form-input error-border">
+                    <button class="btn btn-primary">Login</button>
+                </form>
+
+                <h2 class="fs-m">
+                    Textarea
+                </h2>
+                <textarea id="textarea"  rows="10" class="textarea"></textarea>
                 
             </section>
         

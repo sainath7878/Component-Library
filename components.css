@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Work+Sans:wght@300&display=swap');
 
-@import "./Components/Alert/alert.css";
+@import "https://jodd-component-css.netlify.app/component/alert/alert.css";
 @import "./Components/Avatar/avatar.css";
 @import "./Components/Badge/badge.css";
 @import "/Components/Buttons/button.css";
@@ -19,10 +19,11 @@
 }
 
 :root{
-    --BACKGROUND-COLOR:#FFF;
+    --BACKGROUND-COLOR: rgb(255, 255, 255);
     --PRIMARY-COLOR: #010101;
     --SECONDARY-COLOR: #a40ae0;
     --HIGHLIGHT-COLOR: #374151;
+    
     --SUCCESS-BACKGROUND_COLOR: #bbf7d0;
     --SUCCESS-COLOR: #015821;
     --DANGER-BACKGROUND_COLOR: #fecaca;
