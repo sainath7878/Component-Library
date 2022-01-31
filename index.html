@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css" >
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="components.css">
     <title>JODD UI</title>
 </head>
 <body>
 
     <!-- -----Header Start--------- -->
-    <header class="header fix-top d-flex align-center">
+    <header class="header d-flex align-center">
         <a href="index.html" class="brand-link">JODD UI</a>
         <a href="index.html" class="header-nav-link">Home</a>
         <a href="#" class="header-nav-link">Docs</a>
@@ -22,30 +23,33 @@
         <!-- ---------Side Navbar start------------ -->
         <aside>
             <nav class="side-nav">
+                <p class="fs-m mb-2">
+                    Components
+                </p>
                 <ul class="nav-pills">
                     <li class="nav-link">
-                        <a href="#introduction" class="fs-m">Getting Started</a>
+                        <a href="#introduction" class="fs-s">Getting Started</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#alert" class="fs-m">Alert</a>
+                        <a href="#alert" class="fs-s">Alert</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#avatar" class="fs-m">Avatar</a>
+                        <a href="#avatar" class="fs-s">Avatar</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#badge" class="fs-m">Badge</a>
+                        <a href="#badge" class="fs-s">Badge</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#button" class="fs-m">Button</a>
+                        <a href="#button" class="fs-s">Button</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#card" class="fs-m">Cards</a>
+                        <a href="#card" class="fs-s">Cards</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#image" class="fs-m">Image</a>
+                        <a href="#image" class="fs-s">Image</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#input" class="fs-m">Input</a>
+                        <a href="#input" class="fs-s">Input</a>
                     </li>
                 </ul>
             </nav>
@@ -64,7 +68,7 @@
                 
                 <pre class="code-container">
                     <code class="html fs-s">
-
+<link rel="stylesheet" href="https://jodd-component-css.netlify.app/main.css">                       
                     </code>
                 </pre>
             </section>
@@ -89,21 +93,21 @@
 
                 <pre class="code-container">
                     <code class="html fs-s">
-&lt;div class=&quot;alert alert-success&quot;&gt;
-    &lt;p class=&quot;fs-s&quot;&gt;A success alert&lt;/p&gt;
-&lt;/div&gt;
+<div class="alert alert-success">
+    <p class="fs-s">A success alert</p>
+</div>
 
-&lt;div class=&quot;alert alert-danger&quot;&gt;
-    &lt;p class=&quot;fs-s&quot;&gt;A danger alert&lt;/p&gt;
-&lt;/div&gt;
+<div class="alert alert-danger">
+    <p class="fs-s">A danger alert</p>
+</div>
 
-&lt;div class=&quot;alert alert-warning&quot;&gt;
-    &lt;p class=&quot;fs-s&quot;&gt;A warning alert&lt;/p&gt;
-&lt;/div&gt;
+<div class="alert alert-warning">
+    <p class="fs-s">A warning alert</p>
+</div>
 
-&lt;div class=&quot;alert alert-info&quot;&gt;
-    &lt;p class=&quot;fs-s&quot;&gt;A info alert&lt;/p&gt;
-&lt;/div&gt;
+<div class="alert alert-info">
+    <p class="fs-s">A info alert</p>
+</div>
                     </code>
                 </pre>
             </section>
@@ -112,16 +116,16 @@
             <section class="section" id="avatar">
                 <h1 class="fs-ml">Avatar</h1>
                 <p class="fs-s">Avatar Component is available in <span class="highlight">4</span> sizes.</p>
-                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-sm avatar-rounded mr-2"/>
-                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-m avatar-rounded mr-2"/>
-                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-l avatar-rounded mr-2"/>
-                <img src="Images/man-profile-svgrepo-com.svg" alt="Profile" class="avatar-xl avatar-rounded mr-2"/>
+                <img src="Images/avatar.svg" alt="Profile" class="avatar-sm avatar-rounded mr-2"/>
+                <img src="Images/avatar.svg" alt="Profile" class="avatar-m avatar-rounded mr-2"/>
+                <img src="Images/avatar.svg" alt="Profile" class="avatar-l avatar-rounded mr-2"/>
+                <img src="Images/avatar.svg" alt="Profile" class="avatar-xl avatar-rounded mr-2"/>
                 <pre class="code-container">
                     <code class="html fs-s">
-&lt;img src=&quot;...&quot; alt=&quot;&quot; class=&quot;avatar-sm avatar-rounded&quot;/&gt;
-&lt;img src=&quot;...&quot; alt=&quot;&quot; class=&quot;avatar-m avatar-rounded&quot;/&gt;
-&lt;img src=&quot;...&quot; alt=&quot;&quot; class=&quot;avatar-l avatar-rounded&quot;/&gt;
-&lt;img src=&quot;...&quot; alt=&quot;&quot; class=&quot;avatar-xl avatar-rounded&quot;/&gt;
+<img src="Images/avatar.svg" alt="Profile" class="avatar-sm avatar-rounded"/>
+<img src="Images/avatar.svg" alt="Profile" class="avatar-m avatar-rounded"/>
+<img src="Images/avatar.svg" alt="Profile" class="avatar-l avatar-rounded"/>
+<img src="Images/avatar.svg" alt="Profile" class="avatar-xl avatar-rounded"/>
                     </code>
                 </pre>
             </section>
@@ -132,28 +136,46 @@
                 <h2 class="fs-m">Badge on Avatars</h2>
                 <p class="fs-s">Badge on Avatars consists of <span class="highlight">four</span> components</p>
                 <div class="badge mr-2">
-                    <img src="./Images/man-profile-svgrepo-com.svg"  alt="profile" class="avatar-sm avatar-rounded ">
+                    <img src="./Images/avatar.svg"  alt="profile" class="avatar-sm avatar-rounded ">
                     <span class="indicator indicator-sm"></span>
                 </div>
 
                 <div class="badge mr-2">
-                    <img src="./Images/man-profile-svgrepo-com.svg"  alt="profile" class="avatar-m avatar-rounded ">
+                    <img src="./Images/avatar.svg"  alt="profile" class="avatar-m avatar-rounded ">
                     <span class="indicator indicator-m"></span>
                 </div>
 
                 <div class="badge mr-2">
-                    <img src="./Images/man-profile-svgrepo-com.svg"  alt="profile" class="avatar-l avatar-rounded ">
+                    <img src="./Images/avatar.svg"  alt="profile" class="avatar-l avatar-rounded ">
                     <span class="indicator indicator-l"></span>
                 </div>
 
                 <div class="badge mr-2">
-                    <img src="./Images/man-profile-svgrepo-com.svg"  alt="profile" class="avatar-xl avatar-rounded ">
+                    <img src="./Images/avatar.svg"  alt="profile" class="avatar-xl avatar-rounded ">
                     <span class="indicator indicator-xl"></span>
                 </div>
 
                 <pre class="code-container">
                     <code class="html fs-s">
+<div class="badge">
+    <img src="./Images/avatar.svg"  alt="profile" class="avatar-sm avatar-rounded ">
+    <span class="indicator indicator-sm"></span>
+</div>
 
+<div class="badge">
+    <img src="./Images/avatar.svg"  alt="profile" class="avatar-m avatar-rounded ">
+    <span class="indicator indicator-m"></span>
+</div>
+
+<div class="badge">
+    <img src="./Images/avatar.svg"  alt="profile" class="avatar-l avatar-rounded ">
+    <span class="indicator indicator-l"></span>
+</div>
+
+<div class="badge">
+    <img src="./Images/avatar.svg"  alt="profile" class="avatar-xl avatar-rounded ">
+    <span class="indicator indicator-xl"></span>
+</div>
                     </code>
                 </pre>
 
@@ -171,15 +193,15 @@
 
                 <pre class="code-container">
                     <code class="html fs-s">
-&lt;div class=&quot;badge&quot;&gt;
-    &lt;img src=&quot;....&quot; alt=&quot;....&quot; class=&quot;badge-icon&quot;&gt;
-    &lt;span class=&quot;text-badge d-flex-center&quot;&gt;10+&lt;/span&gt;
-&lt;/div&gt;
+<div class="badge">
+    <img src="./Images/IcRoundShoppingCart.svg" alt="Cart" class="badge-icon">
+    <span class="text-badge d-flex-center">10+</span>
+</div>
 
-&lt;div class=&quot;badge&quot;&gt;
-    &lt;img src=&quot;....&quot; alt=&quot;....&quot; class=&quot;badge-icon&quot;&gt;
-    &lt;span class=&quot;text-badge d-flex-center&quot;&gt;5&lt;/span&gt;
-&lt;/div&gt;
+<div class="badge">
+    <img src="./Images/MdiBell.svg" alt="Bell" class="badge-icon">
+    <span class="text-badge d-flex-center">5</span>
+</div>
                     </code>
                 </pre>
             </section>
@@ -197,8 +219,8 @@
                 <button class="btn btn-danger mr-2">Danger</button>
                 <pre class="code-container">
                     <code class="html fs-s">
-&lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-danger">Danger</button>
                     </code>
                 </pre>
 
@@ -208,8 +230,8 @@
                 <button class="btn btn-danger-outline mr-2">Danger</button>
                 <pre class="code-container">
                     <code class="html fs-s">
-&lt;button class=&quot;btn btn-primary-outline&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;btn btn-danger-outline&quot;&gt;Danger&lt;/button&gt;
+<button class="btn btn-primary-outline">Primary</button>
+<button class="btn btn-danger-outline">Danger</button>
                     </code>
                 </pre>
 
@@ -222,13 +244,13 @@
                     </button>
                     <pre class="code-container">
                         <code class="html fs-s">
-&lt;button class=&quot;btn btn-primary d-flex-inline-center&quot;&gt;
-    &lt;img src=&quot;....&quot; alt=&quot;cart&quot; class=&quot;btn-icon&quot;&gt; Add to Cart
-&lt;/button&gt;
+<button class="btn btn-primary d-flex-inline-center">
+    <img src="./Images/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
+</button>
 
-&lt;button class=&quot;btn btn-danger d-flex-inline-center&quot;&gt;
-    &lt;img src=&quot;....&quot; alt=&quot;cart&quot; class=&quot;btn-icon&quot;&gt; Delete
-&lt;/button&gt;
+<button class="btn btn-danger d-flex-inline-center">
+    <img src="./Images/BiTrashFill.svg" alt="cart" class="btn-icon"> Delete
+</button>
                         </code>
                     </pre>
             </section>
@@ -311,27 +333,29 @@
                 </div>
                 <pre class="code-container">
                     <code class="html fs-s">
-&lt;div class=&quot;card&quot;&gt;
-    &lt;img src=&quot;./Images/Valorant.jpg&quot; alt=&quot;Valorant&quot; class=&quot;card-image&quot;&gt;
-    &lt;h1 class=&quot;fs-s card-text-highlight&quot;&gt;
+<div class="card">
+    <img src="./Images/Valorant.jpg" alt="Valorant" class="card-image">
+    <h1 class="fs-s card-text-highlight">
         VALORANT
-    &lt;/h1&gt;
-    &lt;p class=&quot;fs-s&quot;&gt;
+    </h1>
+    <p class="fs-s">
         A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
-    &lt;/p&gt;
-    &lt;p class=&quot;fs-s&quot;&gt;
-        &lt;del&gt;₹1499&lt;/del&gt; ₹999
-    &lt;/p&gt;
-    &lt;button class=&quot;btn btn-primary d-flex-center&quot;&gt;
-        &lt;img src=&quot;./Images/shopping-cart-solid.svg&quot; alt=&quot;cart&quot; class=&quot;btn-icon&quot;&gt; Add to Cart
-    &lt;/button&gt;
-    &lt;button class=&quot;card-btn-dismiss fs-m&quot;&gt;
+    </p>
+    <p class="fs-s">
+        <del>₹1499</del> ₹999
+        <span class="discount">34%</span>
+    </p>
+    <button class="btn btn-primary d-flex-center">
+        <img src="./Images/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
+    </button>
+    <button class="card-btn-dismiss fs-m">
         X
-    &lt;/button&gt;
-    &lt;span class=&quot;card-badge&quot;&gt;
+    </button>
+    <span class="card-badge">
         On Sale
-    &lt;/span&gt;
-&lt;/div&gt;</code>
+    </span>
+</div>
+                    </code>
                 </pre>
 
                 <!-- ------- Text Only Card ------  -->
@@ -375,11 +399,31 @@
                         <button class="btn btn-primary d-flex-center">
                             <img src="./Images/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
                         </button>
-                        <button class="card-btn-dismiss fs-m">
-                            X
-                        </button>
                     </div>
                 </div>
+
+                <pre class="code-container">
+                    <code class="html fs-s">
+<div class="horizontal-card">
+    <img src="./Images/Valorant.jpg" alt="Valorant" class=" horizontal-card-image">
+    <div class="card-content">
+        <h1 class="fs-m card-text-highlight">
+            VALORANT
+        </h1>
+        <p class="fs-s">
+            A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
+        </p>
+        <p class="fs-s">
+            <del>₹1499</del> ₹999
+            <span class="discount">34%</span>
+        </p>
+        <button class="btn btn-primary d-flex-center">
+            <img src="./Images/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
+        </button>
+    </div>
+</div>
+                    </code>
+                </pre>
 
                 <!-- -------- Card with Text Overlay ---------  -->
                 <h2 class="fs-m">Card with Text Overlay</h2>
@@ -400,6 +444,28 @@
                     </button>
                     <p class="text-overlay discount">KillJoy JODD</p>
                 </div>
+
+                <pre class="code-container">
+                    <code class="html fs-s">
+<div class="card text-overlay-card">
+    <img src="./Images/Valorant.jpg" alt="Valorant" class="card-image">
+    <h1 class="fs-s card-text-highlight">
+        VALORANT
+    </h1>
+    <p class="fs-s">
+        A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
+    </p>
+    <p class="fs-s">
+        <del>₹1499</del> ₹999 
+        <span class="discount">34%</span>
+    </p>
+    <button class="btn btn-primary d-flex-center">
+        <img src="./Images/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
+    </button>
+    <p class="text-overlay discount">KillJoy JODD</p>
+</div>
+                    </code>
+                </pre>
             </section>
 
             <!-- --------Images----------  -->
@@ -415,6 +481,13 @@
                     Rounded Image
                 </h2>
                 <img src="./Images/image.jpg" alt="random" class="img-round">
+
+                <pre class="code-container">
+                    <code class="html fs-s">
+<img src="./Images/image.jpg" alt="random" class="image-res">   
+<img src="./Images/image.jpg" alt="random" class="img-round">                     
+                    </code>
+                </pre>
             </section>
 
             <!-- -------- Input --------  -->
@@ -430,6 +503,19 @@
                     <button class="btn btn-primary">Login</button>
                 </form>
 
+                <pre class="code-container">
+                    <code class="html fs-s">
+<form class="form">
+    <label class="fs-m" for="username">Username</label>
+    <input type="text" id="username" placeholder="Enter Username" class="form-input">
+
+    <label class="fs-m" for="Password">Password</label>
+    <input type="password" id="password" placeholder="Enter Password" class="form-input">
+    <button class="btn btn-primary">Login</button>
+</form>
+                    </code>
+                </pre>
+
                 <h2 class="fs-m">Input with error style</h2>
                 <form class="form">
                     <p class="fs-m error-style">Enter Correct username or password</p>
@@ -441,10 +527,30 @@
                     <button class="btn btn-primary">Login</button>
                 </form>
 
+                <pre class="code-container">
+                    <code class="html fs-s">
+<form class="form">
+    <p class="fs-m error-style">Enter Correct username or password</p>
+    <label class="fs-m" for="username">Username</label>
+    <input type="text" id="username" placeholder="Enter Username" class="form-input error-border">
+
+    <label class="fs-m" for="Password">Password</label>
+    <input type="password" id="password" placeholder="Enter Password" class="form-input error-border">
+    <button class="btn btn-primary">Login</button>
+</form>
+                    </code>
+                </pre>
+
                 <h2 class="fs-m">
                     Textarea
                 </h2>
                 <textarea id="textarea"  rows="10" class="textarea"></textarea>
+
+                <pre class="code-container">
+                    <code class="html fs-s">
+<textarea id="textarea"  rows="10" class="textarea"></textarea>
+                    </code>
+                </pre>
                 
             </section>
         
