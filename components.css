@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Work+Sans:wght@300&display=swap');
 
-@import "https://jodd-component-css.netlify.app/main.css";
+/* @import "https://jodd-component-css.netlify.app/main.css"; */
+
+@import "./Components/Alert/alert.css";
+@import "./Components/Avatar/avatar.css";
+@import "./Components/Badge/badge.css";
+@import "./Components/Buttons/button.css";
+@import "./Components//Card/card.css";
+@import "./Components/image/image.css";
+@import "./Components/input/input.css";
+
 
                     
 
@@ -48,11 +57,10 @@ img{
 
 .html {
     border-radius: 1rem;
-
 }
 
 .code-container{
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -130,13 +138,13 @@ img{
     padding: 1rem;
     width: 100vw;
     z-index: 2;
+    justify-content: space-between;
 }
 
 .header-nav-link,
 .brand-link{
     text-decoration: none;
     color: var(--BACKGROUND-COLOR);
-    margin-right: 18rem;
 }
 
 .brand-link{
@@ -153,9 +161,9 @@ img{
 /* -------main start---------------- */
 main{
     display: grid;
-    grid-template-columns: 20% 1fr 5%;
+    grid-template-columns: 20% 1fr;
     grid-template-areas: 
-    "side-nav documentation ..."
+    "side-nav documentation"
     ;
 }
 
@@ -175,7 +183,7 @@ main{
     top: 0;
     overflow-y: scroll;
     height: 100vh;
-    box-shadow: 10px 0 5px -2px #888;
+    box-shadow: 10px 0 3px -2px #888;
 
 }
 
@@ -190,17 +198,20 @@ main{
 
 .nav-link > a:hover{
     color: var(--SECONDARY-COLOR);
-}
-
-.nav-link:hover{
     margin-right: 0.5rem;
     transition: all 0.3s ease-in-out;
 }
+
+/* .nav-link:hover{
+    margin-right: 0.5rem;
+    transition: all 0.3s ease-in-out;
+} */
 
 /* ------documentation start----- */
 .documentation{
     grid-area: documentation;
     margin-left: 1rem;
+    width: 100vw;
 }
 
 .section{
