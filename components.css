@@ -9,7 +9,9 @@
 @import "https://jodd-component-css.netlify.app/component/input/input.css";
                     
 
-*{
+*,
+*::before,
+*::after{
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -50,7 +52,7 @@ img{
 }
 
 .html {
-    text-align: left;
+    border-radius: 1rem;
 }
 
 .code-container{
@@ -130,7 +132,7 @@ img{
 .header{
     background-color: var(--PRIMARY-COLOR);
     padding: 1rem;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
 }
 
@@ -155,9 +157,9 @@ img{
 /* -------main start---------------- */
 main{
     display: grid;
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: 20% 1fr 1fr 10%;
     grid-template-areas: 
-    "side-nav documentation documentation"
+    "side-nav documentation documentation ...."
     ;
 }
 
@@ -174,6 +176,8 @@ main{
     top: 5rem;
     overflow-y: scroll;
     height: calc(100vh - 5rem);
+    box-shadow: 10px 0 5px -2px #888;
+
 }
 
 .nav-link{
@@ -193,7 +197,8 @@ main{
 
 .section{
     padding: 2rem;
-    padding-top: 8rem;
+    padding-top: 6rem;
+    border-bottom: 2px solid var(--SECONDARY-COLOR);
 }
 
 .section > p{
@@ -221,6 +226,7 @@ section > iframe{
     main { 
         grid-template-columns: 1fr;
         grid-template-areas: "documentation";
+        padding: 0;
     }
 
     .side-nav{
@@ -233,7 +239,7 @@ section > iframe{
     }
 
      .code-container{
-        width: 100%;
+        width: 100vw;
         text-align: left;
     }
 
@@ -243,7 +249,7 @@ section > iframe{
 
     .section{
         max-width: 100vw;
-        padding: 1rem;
+        padding: 0.5rem;
         padding-top: 8rem;
     }
 
@@ -257,6 +263,11 @@ section > iframe{
     html{
         font-size: 50%;
         /* overflow-x: hidden; */
+        width: 90vw;
+    }
+
+    main{
+        padding: 0;
     }
 
     .side-nav{
@@ -266,6 +277,7 @@ section > iframe{
     main { 
     grid-template-columns: 1fr;
     grid-template-areas: "documentation";
+    padding: 0;
     }
 
     .documentation{
@@ -278,11 +290,11 @@ section > iframe{
     }
 
     .header{
-        width: 100%;
+        width: 100vw;
     }
 
     .section{
-        max-width: 90vw;
+        max-width: 100vw;
         padding: 0;
         padding-top: 8rem;
     }
